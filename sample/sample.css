@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+html, body, main, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+h1 {
+  font-feature-settings: 'palt';
+  font-size: 40px;
+}
+
+main {
+  padding: 100px 80px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(205, 210, 203);
+}
+
+main > div {
+  margin: 30px auto;
+  line-height: 1.6666;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 8px 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgb(150, 150, 150);
+  border-radius: 6px;
+  line-height: 1;
+  text-align: center;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
