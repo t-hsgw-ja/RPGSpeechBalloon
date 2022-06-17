@@ -73,6 +73,10 @@ class RPGSpeechBalloon {
       duration = 100
     ) {
 
+    if( !document.body.contains(document.querySelector(`#${this.$balloonEl.id}`)) ) {
+      this.createBalloon();
+    }
+
     // テキスト初期化
     this.initText(targetId);
 

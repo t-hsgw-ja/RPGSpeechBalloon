@@ -14,7 +14,8 @@ html {
 
 h1 {
   font-feature-settings: 'palt';
-  font-size: 40px;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
 main {
@@ -25,8 +26,11 @@ main {
 }
 
 main > div {
-  margin: 30px auto;
+  padding: 5rem 0;
   line-height: 1.6666;
+}
+main > div + div {
+  border-top: 1px solid rgb(183, 190, 179);
 }
 
 button {
@@ -40,5 +44,13 @@ button {
   text-align: center;
   font-family: 'DotGothic16', sans-serif;
   font-weight: 400;
+  color: #fff;
+}
+
+code {
+  padding: 5px;
+  background-color: rgb(11, 10, 11);
+  border-radius: 4px;
+  font-size: 20px;
   color: #fff;
 }
