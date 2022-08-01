@@ -77,6 +77,8 @@ class RPGSpeechBalloon {
       this.createBalloon();
     }
 
+    // テキストサニタイズ
+    this.h(propText);
     // テキスト初期化
     this.initText(targetId);
 
@@ -93,5 +95,16 @@ class RPGSpeechBalloon {
         duration * i
       )
     })
+  }
+
+
+  /**
+   * サニタイズ
+   */
+  static h(str){
+    return String(str).replace(/&/g,"&amp;")
+      .replace(/"/g,"&quot;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;")
   }
 }
